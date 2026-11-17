@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Data Privacy Notice and Terms of Use.
+    Written to follow the Data Privacy Act of 2012 (Republic Act No. 10173),
+    its Implementing Rules and Regulations, and National Privacy Commission guidance.
+    If you change this text, increase ConsentManager.NOTICE_VERSION so users are asked again.
+-->
+<resources>
+    <string name="privacy_title">Privacy Notice and Terms</string>
+
+    <string name="privacy_notice_html"><![CDATA[
+<b><big>Data Privacy Notice</big></b><br>
+Version 1 &#183; Last updated November 17, 2026<br><br>
+
+Daily Reminder respects your privacy. This notice explains what information the app processes,
+why, and what your rights are under the <b>Data Privacy Act of 2012 (Republic Act No. 10173)</b>,
+its Implementing Rules and Regulations, and the issuances of the
+<b>National Privacy Commission (NPC)</b>.<br><br>
+
+<b>1. Who we are</b><br>
+Daily Reminder was developed by Group LIBRAS as a school project. For questions about this notice
+or your data, contact any of us:<br>
+&#8226; cbaldonado.k12256165@umak.edu.ph<br>
+&#8226; enecesario.k12255958@umak.edu.ph<br>
+&#8226; arosalan.k12255842@umak.edu.ph<br>
+&#8226; bsaavedra.k12257228@umak.edu.ph<br>
+&#8226; murdaneta.k12256252@umak.edu.ph<br><br>
+
+<b>2. What information the app processes</b><br>
+&#8226; The reminders you create: title, description, time, repeat days, snooze length, notification sound,
+and whether a reminder is marked completed.<br>
+&#8226; The date and time you agreed to this notice (your consent record).<br>
+The app does <b>not</b> ask for your name, phone number, email, location, contacts, photos or any account.
+Please avoid typing sensitive personal information (such as health conditions or ID numbers) in your
+reminders. If you do, it is protected in the same way as all other reminder data.<br><br>
+
+<b>3. Why the information is processed</b><br>
+Only to save your reminders, show them to you, and notify you at the times you choose.
+It is not used for advertising, profiling, or any other purpose.<br><br>
+
+<b>4. Legal basis</b><br>
+Your consent, under Section 12(a) of RA 10173. You give it by ticking the consent box when you first open the app.
+Giving consent is your free choice, and you may withdraw it at any time.<br><br>
+
+<b>5. Where your information is kept and who can see it</b><br>
+Your reminders are stored <b>only on this phone</b>, in the app&#8217;s private storage, and the titles and
+descriptions are encrypted (AES-256). The app has no internet permission, so the developers never
+receive or see your data, and it is <b>not shared with, sold to, or transferred to anyone</b>.
+It is also excluded from cloud backups.<br><br>
+
+<b>6. How long it is kept</b><br>
+Until you delete the reminder, withdraw your consent, or uninstall the app.
+Uninstalling removes all reminder data and the encryption key.<br><br>
+
+<b>7. How your information is protected</b><br>
+Encryption with a key kept in the Android Keystore, app-private storage, no cloud backups,
+and the phone&#8217;s screen lock (PIN, pattern or fingerprint) is required before your reminders are shown.<br><br>
+
+<b>8. Your rights as a data subject</b><br>
+Under RA 10173 you have the right to:<br>
+&#8226; <b>be informed</b> about how your data is processed (this notice);<br>
+&#8226; <b>access</b> your data: all of it is shown on the main screen;<br>
+&#8226; <b>correct</b> it: tap a reminder to edit it;<br>
+&#8226; <b>object</b> and <b>withdraw consent</b>, and to have your data <b>erased or blocked</b>:
+delete a reminder with the trash icon, or use <b>Menu &#8594; Withdraw consent and delete all data</b>;<br>
+&#8226; <b>data portability</b>: your reminders are shown in full in the app and can be copied by you;<br>
+&#8226; <b>damages</b> if you are harmed by a violation of your data privacy rights; and<br>
+&#8226; <b>file a complaint</b> with the National Privacy Commission (www.privacy.gov.ph).<br><br>
+
+<b>9. Phone permissions</b><br>
+Android will separately ask you to allow notifications and exact alarms. These are used only to deliver
+your reminders. You may refuse them, but reminders may then not appear or may be late.<br><br>
+
+<b>10. Changes to this notice</b><br>
+If this notice changes, the app will show it again and ask for your consent before you continue.<br><br>
+
+If you are below 18 years old, please read this notice with your parent or guardian.
+]]></string>
+
+    <string name="terms_of_use_html"><![CDATA[
+<b><big>Terms of Use</big></b><br><br>
+<b>1.</b> Daily Reminder is a free school project provided &#8220;as is&#8221;, for personal use only.<br><br>
+<b>2.</b> Reminders depend on your phone&#8217;s settings (battery saver, Do Not Disturb, notification and
+alarm permissions). We cannot guarantee that every reminder will appear on time, so do not rely on the
+app alone for medical, safety, or other critical reminders.<br><br>
+<b>3.</b> You are responsible for what you write in your reminders and must use the app lawfully.<br><br>
+<b>4.</b> To the extent allowed by law, the developers are not liable for missed reminders or for data
+lost when the app is uninstalled or its data is cleared.<br><br>
+<b>5.</b> These terms are governed by the laws of the Republic of the Philippines.
+]]></string>
+
+    <string name="consent_privacy_checkbox">I have read and understood the Data Privacy Notice, and I consent to the processing of my reminder data as described.</string>
+    <string name="consent_terms_checkbox">I agree to the Terms of Use.</string>
+    <string name="agree_continue">Agree and Continue</string>
+    <string name="decline">Decline</string>
+    <string name="decline_title">Consent is required</string>
+    <string name="decline_message">Daily Reminder needs your consent to store your reminders on this phone. Without it, the app cannot be used. Nothing has been saved.</string>
+    <string name="close_app">Close app</string>
+    <string name="go_back">Go back</string>
+    <string name="consent_given_on">You gave your consent on %1$s.</string>
+
+    <string name="menu_privacy">Privacy Notice and Terms</string>
+    <string name="menu_withdraw">Withdraw consent and delete all data</string>
+    <string name="withdraw_title">Withdraw consent?</string>
+    <string name="withdraw_message">This will permanently delete ALL your reminders and cancel their notifications. This cannot be undone. You will be asked for consent again before you can use the app.</string>
+    <string name="withdraw_confirm">Delete everything</string>
+    <string name="withdraw_done">Consent withdrawn. All your data has been deleted.</string>
+</resources>

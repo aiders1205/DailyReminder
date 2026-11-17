@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/brand_primary"
+        app:navigationIcon="@drawable/ic_back"
+        app:navigationIconTint="@android:color/white"
+        app:titleTextColor="@android:color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/titleLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/title_hint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences"
+                    android:maxLength="60" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="@string/description_hint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLength="200"
+                    android:minLines="3" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                style="@style/FormLabel"
+                android:text="@string/notify_time" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonTime"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:textSize="24sp"
+                app:icon="@drawable/ic_clock"
+                app:iconGravity="textStart" />
+
+            <TextView
+                style="@style/FormLabel"
+                android:text="@string/repeat_on" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:chipSpacingHorizontal="6dp">
+
+                <com.google.android.material.chip.Chip android:id="@+id/chipSun" style="@style/DayChip" android:text="Sun" />
+                <com.google.android.material.chip.Chip android:id="@+id/chipMon" style="@style/DayChip" android:text="Mon" />
+                <com.google.android.material.chip.Chip android:id="@+id/chipTue" style="@style/DayChip" android:text="Tue" />
+                <com.google.android.material.chip.Chip android:id="@+id/chipWed" style="@style/DayChip" android:text="Wed" />
+                <com.google.android.material.chip.Chip android:id="@+id/chipThu" style="@style/DayChip" android:text="Thu" />
+                <com.google.android.material.chip.Chip android:id="@+id/chipFri" style="@style/DayChip" android:text="Fri" />
+                <com.google.android.material.chip.Chip android:id="@+id/chipSat" style="@style/DayChip" android:text="Sat" />
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                style="@style/FormLabel"
+                android:text="@string/snooze_length" />
+
+            <Spinner
+                android:id="@+id/spinnerSnooze"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <TextView
+                style="@style/FormLabel"
+                android:text="@string/notification_sound" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonSound"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/ic_music" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+        android:text="@string/save"
+        android:textSize="16sp"
+        app:backgroundTint="@color/brand_accent"
+        app:cornerRadius="14dp" />
+</LinearLayout>
